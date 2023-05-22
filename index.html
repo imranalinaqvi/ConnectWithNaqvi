@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectWithImran</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0052863876.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo3.png" class="logo"> 
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer | Web Developer</p>
+            <h1>Hey, <br> I'm Syed <span>Imran Murtaza</span>  Shah <br> Welcome!</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ----------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pic3.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-tite">About Me</h1>
+                <p>Assalamu-Alaikum! My name is Syed Imran Murtaza, and I'm currently pursuing a bachelor's degree in Software Engineering. I have a strong passion for both software engineering and web development. This personal portfolio website represents my first step in sharing my projects, skills, and growth in these fields. I believe in the power of technology to make a positive impact, and I am excited to contribute to the ever-evolving world of software engineering and web development. Join me on this journey as I explore new possibilities and strive for excellence in the digital realm. </p>
+            
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Software Engineering</span><br>Equipped with a strong foundation in software development<br> principles, algorithms, and data structures.</li>
+                        <li><span>Web Development</span><br> Proficient in creating visually appealing and interactive<br> websites using modern web technologies.</li>
+                        <li><span>Photography</span><br>Passionate about capturing captivating moments and conveying <br>stories through the lens of a camera.</li>
+                        <li><span>Editing</span><br>Skilled in utilizing editing software to enhance and refine content <br>for various media formats.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>Software Engineering Side</span><br> I am constantly improving my skills and gaining valuable experience by staying updated with the latest industry trends and technologies. This allows me to enhance my abilities and deliver innovative software solutions.</li>
+                        <li><span>Web Development</span>Continuously improving my skills and gaining hands-on experience, I create visually appealing web pages that offer seamless user experiences, just like the one you are seeing.<br> Web pages</li>
+                        <li><span>Editing Experience</span><br>With 5 years of experience starting from 9th grade, I have mastered the art of editing. From running Islamic editing pages to various projects, I bring creativity and meticulousness to deliver captivating visual edits.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>In 2020</span><br> I successfully completed my secondary education with a focus on the science group. </li>
+                        <li><span>In 2022</span><br> I completed my intermediate education, specializing in the pre-engineering group. This further solidified my interest in engineering and software development.</li>
+                        <li><span>In 2023 (present) </span><br>Currently, I am pursuing my bachelor's degree in software engineering. This program provides me with a comprehensive understanding of software development principles and equips me with the necessary skills to create innovative and efficient solutions. Additionally, I am actively learning web development to expand my knowledge and enhance my capabilities in creating user-friendly and visually appealing websites.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------------services--------------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-tite">Something about:</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Coding</h2>
+                <p>Coding is the art of writing instructions in a programming language to solve problems and achieve specific tasks. It involves logical thinking, choosing the right programming language, and structuring code with proper syntax.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-regular fa-crop-simple"></i>
+                <h2>Web Pages</h2>
+                <p>Web pages form the foundation of the internet, constructed using HTML to provide structure and CSS to enhance their visual appearance. They combine text, images, links, and interactive elements to deliver information and create engaging user experiences.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>An Interesting Subject</h2>
+                <p>Physics is a captivating field that studies the fundamental principles governing matter and energy. Areas of interest include quantum mechanics, which explores the behavior of particles at the smallest scales, astrophysics and cosmology, which investigate celestial objects and the universe, and particle physics, which studies the fundamental particles and their interactions.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- ----------portfolio------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Some Books:</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/book1.jpg" >
+                <div class="layer">
+                    <h3>The Subtle Art Of Not Giving A F*ck</h3>
+                    <p> "The Subtle Art of Not Giving a F*ck" is a bestselling self-help book by Mark Manson that challenges the traditional notions of happiness and encourages readers to focus on what truly matters to them. It promotes personal responsibility, embracing discomfort, and prioritizing one's values over external validation.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/book3.jpg" >
+                <div class="layer">
+                    <h3>The Suparman In Islam</h3>
+                    <p>"The Suparman in Islam" is a captivating book that explores Imam Jaffar al-Sadiq's profound knowledge of science. It delves into his contributions and insights across various scientific disciplines, highlighting the intersection of Islamic scholarship and scientific exploration during his time.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/book5.jpg" >
+                <div class="layer">
+                    <h3>Coding Corner</h3>
+                    <p>Coding books are essential tools for programmers of all levels. They provide guidance, tutorials, and examples to help readers learn programming languages and enhance their skills. Covering a wide range of topics and languages, coding books offer valuable resources for various areas of software development.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- ----------contact-------------- -->
+
+<div id="Contact">
+    <div class="container">
+        <div row="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i>shahalinaqvi786@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i>0318-202551-7</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/naqvii05/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="images/mycv.pdf" download class="btn btn2" >Download CV</a>
+                
+
+            </div>
+            <div class="contact-right"> 
+                <form>
+                    <input type="text" name ="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © naqvii05. Made with <i class="fa-solid fa-heart"></i> by Syed Imran Murtaza</p>
+    </div>
+</div>
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+    
+}
+
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+
+
+</script>
+    
+</body>
+</html>
