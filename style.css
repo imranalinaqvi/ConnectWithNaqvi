@@ -359,23 +359,26 @@ nav .fas{
     display: none;
 }
 
-@media only screen and  (max-width: 600px){
-    #header{
-         background-image: url(images/full.jpg);
-    
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: url(images/full.jpg);
     }
-    .header-text{
-        margin-top: 100%;
+    
+    .header-text {
+        margin-top: 10%;
         font-size: 16px;
     }
-    .header-text h1{
+    
+    .header-text h1 {
         font-size: 30px;
     }
-    nav .fas{
+    
+    nav .fas {
         display: block;
         font-size: 25px;
     }
-    nav ul{
+    
+    nav ul {
         background: #ff004f;
         position: fixed;
         top: 0;
@@ -386,56 +389,45 @@ nav .fas{
         z-index: 2;
         transition: right 0.5s;
     }
-    nav ul li{
+    
+    nav ul li {
         display: block;
         margin: 25px;
     }
-    nav ul .fas{
+    
+    nav ul .fas {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
-    .sub-tite{
+    
+    .sub-title {
         font-size: 40px;
     }
-    .about-col-1, .about-col-2{
+    
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 100%;
     }
-    .about-col-1{
+    
+    .about-col-1 {
         margin-bottom: 30px;
     }
-    .about-col-2{
+    
+    .about-col-2 {
         font-size: 14px;
     }
-    .tab-links{
+    
+    .tab-links {
         font-size: 16px;
         margin-right: 20px;
-    
     }
-    .contact-right{
-        flex-basis: 100%;
-        bottom: -4690px;
-        right: 100px; /* Adjust the right value as per your preference */
-        width: 50%;
-        
-    }
-    .contact-left{
-        flex-basis: 16px;
-        position: absolute;
-        
-    bottom: -4350px; /* Adjust the top value as per your preference */
-    right: 50px; /* Adjust the right value as per your preference */
-    width: 50%;
-    
-    }
-   
     
     .contact-left {
-        position: absolute;
-        bottom: -4250px;
-        right: 100px; /* Adjust the right value as per your preference */
-        width: 50%;
+        flex-basis: 50%;
+        position: relative; /* Change to relative positioning */
+        margin-bottom: 30px; /* Add margin instead of absolute positioning */
     }
     
     .contact-left .sub-title {
@@ -444,21 +436,60 @@ nav .fas{
     
     .contact-left p {
         margin: 0;
-        line-height: 1.2; /* Adjust the line-height value to decrease spacing between lines */
+        line-height: 1.2;
     }
     
     .contact-left .social-icons {
-        margin-top: 10px; /* Adjust the top margin value as per your preference */
+        margin-top: 10px;
     }
     
     .contact-left .social-icons a {
-        margin-right: 5px; /* Adjust the right margin value between social icons */
+        margin-right: 5px;
     }
     
     .contact-left .btn {
-        margin-top: 10px; /* Adjust the top margin value for the "Download CV" button */
+        margin-top: 10px;
     }
-
+    
+    .contact-right {
+        flex-basis: 50%;
+        position: relative; /* Change to relative positioning */
+        bottom: 14px; /* Adjust the top value as per your preference */
+    right: -53px; /* Adjust the right value as per your preference */
+    width: 50%
+    }
+    
+    .contact-right .sub-title {
+        margin-top: 0;
+    }
+    
+    .contact-right p {
+        margin: 0;
+        line-height: 1.2;
+    }
+    
+    .contact-right .social-icons {
+        margin-top: 10px;
+    }
+    
+    .contact-right .social-icons a {
+        margin-right: 5px;
+    }
+    
+    .contact-right .btn {
+        margin-top: 10px;
+    }
+    
+    .contact-container {
+        position: relative;
+    }
+    
+    .contact-container::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
     .copyright {
         font-size: 12px;
         width: 100%;
@@ -466,8 +497,7 @@ nav .fas{
         padding: 25px 0;
         background: #262626;
         font-weight: 300;
-        margin-top: 620px;
+        margin-top: 20px;
     }
-
-    
 }
+
