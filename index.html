@@ -158,12 +158,19 @@
 
             </div>
             <div class="contact-right"> 
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name ="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <button type="submit" class="btn btn2" onclick="openPopup()">Submit</button>
                 </form>
+                <span id="msg"></span>
+                <div class="popup" id="popup">
+                    <img src="images/404-tick.png" >
+                    <h2>Thank You!</h2>
+                    <p>Immu Tak Apka Message Agaya hai. Thanks!</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
             </div>
             
         </div>
@@ -205,6 +212,38 @@ function opentab(tabname){
 
 
 </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwHyY9Fn30FuzzH-U_022ZCajxeGoUkEP9kpcOV4o1i_uFJEVfDT954dsuaicz40qqc/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "HAN JEE SUBMIT HOGAYA!! "
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script>
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+
+
+
+  </script>
     
 </body>
 </html>
