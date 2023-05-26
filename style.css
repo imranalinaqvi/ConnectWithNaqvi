@@ -347,7 +347,7 @@ form .btn2{
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
-    margin-top: 70px;
+    margin-top: 685px;
 }
 
 .copyright i{
@@ -428,6 +428,7 @@ nav .fas{
         flex-basis: 50%;
         position: relative; /* Change to relative positioning */
         margin-bottom: 30px; /* Add margin instead of absolute positioning */
+        right: -40px;
     }
     
     .contact-left .sub-title {
@@ -455,8 +456,10 @@ nav .fas{
         flex-basis: 50%;
         position: relative; /* Change to relative positioning */
         bottom: 14px; /* Adjust the top value as per your preference */
-    right: -53px; /* Adjust the right value as per your preference */
-    width: 50%
+    right: -30px; /* Adjust the right value as per your preference */
+    width: 250px;
+    text-align: center;
+    align-items: center;
     }
     
     .contact-right .sub-title {
@@ -491,13 +494,14 @@ nav .fas{
     }
     
     .copyright {
-        font-size: 12px;
+        font-size: 10px;
         width: 100%;
         text-align: center;
         padding: 25px 0;
         background: #262626;
         font-weight: 300;
-        margin-top: 20px;
+        margin-top: 183px;
+        
     }
 }
 
@@ -702,10 +706,12 @@ body::-webkit-scrollbar {
 }
 
 .imrani{
-    height: 100vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-bottom: -150px;
+    
     
 }
 
@@ -786,6 +792,11 @@ body::-webkit-scrollbar {
         width: 600px;
         height: 375px;
     }
+    .imrani{
+        margin-bottom: 0px;
+    }
+
+ 
 
     .img-slider .slide .info{
         padding: 10px 25px;
@@ -863,13 +874,38 @@ body::-webkit-scrollbar {
 
     }
 
+    .hello{
+        font-size: small;
+        margin-top: -10px;
+        margin-bottom: 0;
+        margin: 0;
+
+    }
+
+}
+
+.imrani .me {
+    position: relative;
+    top: -20px; /* Adjust the value as needed */
+  }
+
+.hello{
+    margin: 0px;
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: #ff004f;
+    border-radius: 10px;
+    padding: 5px;
+    align-items: center;
+    font-size: medium;
+    margin-top: 30px;
 }
 
 
-.imrani .me{
-    text-align: center;
-        font-size: 60px;
-        font-weight: 60px;
-        color: #fff;
-    
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
