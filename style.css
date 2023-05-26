@@ -69,7 +69,7 @@ nav ul li a:hover::after{
     font-size: 60px;
     margin-top: 20px;
 }
-.header-text h1 span{
+.header-text h1  span{
     color: #ff004f;
 }
 
@@ -283,7 +283,7 @@ nav ul li a:hover::after{
 .contact-right{
     flex-basis: 60%;
     position: absolute;
-    bottom: -2351px; /* Adjust the top value as per your preference */
+    bottom: -2700px; /* Adjust the top value as per your preference */
     right: 100px; /* Adjust the right value as per your preference */
     width: 50%;
    
@@ -365,7 +365,7 @@ nav .fas{
     }
     
     .header-text {
-        margin-top: 10%;
+        margin-top: 110%;
         font-size: 16px;
     }
     
@@ -908,4 +908,25 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+/* -----------------------imam --------------- */
+
+.bio span{
+    
+        color: #ff004f;
+    }
+    
+.books span{
+    color: yellow;
+}
+.box{
+    padding-top: 0;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-weight: bold;
+}
+
+.boldi{
+    font-weight: bold;
 }
