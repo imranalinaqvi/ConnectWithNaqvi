@@ -283,7 +283,7 @@ nav ul li a:hover::after{
 .contact-right{
     flex-basis: 60%;
     position: absolute;
-    bottom: -2700px; /* Adjust the top value as per your preference */
+    bottom: -3720px; /* Adjust the top value as per your preference */
     right: 100px; /* Adjust the right value as per your preference */
     width: 50%;
    
@@ -363,6 +363,17 @@ nav .fas{
     #header {
         background-image: url(images/full.jpg);
     }
+
+    .box{
+        padding-top: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+
+
+
+
     
     .header-text {
         margin-top: 110%;
@@ -881,6 +892,8 @@ body::-webkit-scrollbar {
         margin: 0;
 
     }
+
+    
 
 }
 
