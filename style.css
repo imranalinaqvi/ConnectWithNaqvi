@@ -198,6 +198,9 @@ nav ul li a:hover::after{
 #portfolio{
     padding: 50px 0;
 }
+#another{
+    padding: 50px 0;
+}
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -283,7 +286,7 @@ nav ul li a:hover::after{
 .contact-right{
     flex-basis: 60%;
     position: absolute;
-    bottom: -3720px; /* Adjust the top value as per your preference */
+    bottom: -5770px; /* Adjust the top value as per your preference */
     right: 100px; /* Adjust the right value as per your preference */
     width: 50%;
    
