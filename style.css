@@ -286,7 +286,7 @@ nav ul li a:hover::after{
 .contact-right{
     flex-basis: 60%;
     position: absolute;
-    bottom: -5770px; /* Adjust the top value as per your preference */
+    bottom: -5650px; /* Adjust the top value as per your preference */
     right: 100px; /* Adjust the right value as per your preference */
     width: 50%;
    
